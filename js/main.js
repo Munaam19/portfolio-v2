@@ -1,18 +1,10 @@
+document.documentElement.classList.add('js');
 document.addEventListener('DOMContentLoaded', function(){
-  initLoader();
-  initCursor();
-  initNavbar();
-  initReveal();
-  initTypewriter();
-  initCounters();
-  initBars();
-  initTilt();
-  initParticles();
-  initLightbox();
-  initForm();
-  initWhatsAppFab();
-  initYear();
+  safe(initLoader); safe(initCursor); safe(initNavbar); safe(initReveal);
+  safe(initTypewriter); safe(initCounters); safe(initBars); safe(initTilt);
+  safe(initParticles); safe(initLightbox); safe(initForm); safe(initWhatsAppFab); safe(initYear);
 });
+function safe(fn){ try { fn(); } catch(e){} }
 
 /* ---------- Loader ---------- */
 function initLoader(){
@@ -86,6 +78,7 @@ function initNavbar(){
 /* ---------- Scroll reveal ---------- */
 function initReveal(){
   var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)){ els.forEach(function(el){ el.classList.add('visible'); }); return; }
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); } });
   }, {threshold:.15});
@@ -95,6 +88,7 @@ function initReveal(){
 /* ---------- Skill bars ---------- */
 function initBars(){
   var bars = document.querySelectorAll('.skill-bar .fill[data-w]');
+  if (!('IntersectionObserver' in window)){ bars.forEach(function(b){ b.style.width = b.getAttribute('data-w') + '%'; }); return; }
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(en){
       if (!en.isIntersecting) return;
