@@ -10,9 +10,9 @@ function safe(fn){ try { fn(); } catch(e){} }
 function initLoader(){
   var l = document.getElementById('loader');
   window.addEventListener('load', function(){
-    setTimeout(function(){ l.classList.add('hide'); }, 350);
+    setTimeout(function(){ l.classList.add('hide'); }, 120);
   });
-  setTimeout(function(){ l.classList.add('hide'); }, 2200);
+  setTimeout(function(){ l.classList.add('hide'); }, 900);
 }
 
 /* ---------- Custom cursor ---------- */
