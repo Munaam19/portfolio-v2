@@ -9,10 +9,7 @@ function safe(fn){ try { fn(); } catch(e){} }
 /* ---------- Loader ---------- */
 function initLoader(){
   var l = document.getElementById('loader');
-  window.addEventListener('load', function(){
-    setTimeout(function(){ l.classList.add('hide'); }, 120);
-  });
-  setTimeout(function(){ l.classList.add('hide'); }, 900);
+  setTimeout(function(){ l.classList.add('hide'); }, 400);
 }
 
 /* ---------- Custom cursor ---------- */

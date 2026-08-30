@@ -21,7 +21,7 @@ ul{list-style:none;}
 #loader{position:fixed; inset:0; z-index:9999; background:var(--bg);
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px;
   transition:opacity .5s ease, visibility .5s ease;
-  animation:autoHide 0s 2s forwards;}
+  animation:autoHide 0s 1.2s forwards;}
 @keyframes autoHide{to{opacity:0; visibility:hidden;}}
 #loader.hide{opacity:0; visibility:hidden;}
 .loader-mark{font-family:'Playfair Display',serif; font-style:italic; font-size:64px;
