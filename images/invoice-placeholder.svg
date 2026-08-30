@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1609"/>
+      <stop offset="1" stop-color="#0f0c07"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#g)"/>
+  <g stroke="#d4af37" stroke-opacity="0.22" fill="none">
+    <circle cx="560" cy="60" r="120"/>
+    <circle cx="60" cy="380" r="90"/>
+  </g>
+
+  <rect x="120" y="70" width="400" height="280" rx="14" fill="#0b0906" stroke="#d4af37" stroke-opacity="0.35"/>
+
+  <text x="150" y="120" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#f0d678">INVOICE</text>
+  <text x="150" y="145" font-family="Georgia, serif" font-size="11" fill="#a79c85">No. INV-2024-0148</text>
+
+  <line x1="150" y1="165" x2="490" y2="165" stroke="#d4af37" stroke-opacity="0.3"/>
+
+  <text x="150" y="200" font-family="Georgia, serif" font-size="12" fill="#d4af37">ITEM</text>
+  <text x="400" y="200" font-family="Georgia, serif" font-size="12" fill="#d4af37" text-anchor="end">AMOUNT</text>
+
+  <rect x="150" y="215" width="340" height="9" rx="4.5" fill="#d4af37" fill-opacity="0.14"/>
+  <rect x="150" y="235" width="260" height="9" rx="4.5" fill="#d4af37" fill-opacity="0.14"/>
+  <rect x="150" y="255" width="300" height="9" rx="4.5" fill="#d4af37" fill-opacity="0.14"/>
+  <rect x="150" y="275" width="230" height="9" rx="4.5" fill="#d4af37" fill-opacity="0.14"/>
+
+  <text x="400" y="258" font-family="Georgia, serif" font-size="11" fill="#f0d678" text-anchor="end">&#36; 4,250.00</text>
+
+  <line x1="150" y1="298" x2="490" y2="298" stroke="#d4af37" stroke-opacity="0.3"/>
+
+  <rect x="150" y="312" width="150" height="26" rx="13" fill="#d4af37" fill-opacity="0.16" stroke="#d4af37" stroke-opacity="0.5"/>
+  <text x="225" y="329" font-family="Georgia, serif" font-size="11" fill="#f0d678" text-anchor="middle">PAYMENT DUE</text>
+
+  <circle cx="560" cy="360" r="20" fill="none" stroke="#f0d678" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 4">
+    <animateTransform attributeName="transform" type="rotate" from="0 560 360" to="360 560 360" dur="6s" repeatCount="indefinite"/>
+  </circle>
+</svg>

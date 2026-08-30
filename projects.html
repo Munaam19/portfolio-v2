@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Munaam Farooqui</title>
+<meta name="description" content="Projects by Munaam Farooqui — PrimeServe restaurant app, Study Planner web app and invoice systems.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-mark">M&middot;F</div>
+  <div class="loader-line"><span></span></div>
+</div>
+
+<nav class="navbar">
+  <a href="index.html" class="brand">Munaam<b> Farooqui</b></a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-head" style="padding:160px 30px 30px;">
+  <div class="container">
+    <span class="sec-tag reveal">Projects</span>
+    <h1 class="sec-title reveal d1">Work I&rsquo;m proud <em class="gold-text">of</em></h1>
+    <div class="breadcrumb reveal d2"><a href="index.html">Home</a> &nbsp;&middot;&nbsp; Projects</div>
+  </div>
+</div>
+
+<section id="projects-top" style="padding-top:40px;">
+  <div class="container">
+
+    <div class="proj-card reveal" data-title="Study Planner" data-note="A live web application built with Python &amp; Flask, hosted on PythonAnywhere.">
+      <span class="proj-num">01</span>
+      <div class="proj-card-inner">
+        <div class="proj-shot">
+          <a href="https://Munaam19.pythonanywhere.com" target="_blank" rel="noopener" style="display:block;">
+            <img src="images/study-planner.png" alt="Study Planner - live app">
+            <div class="open-view"><span>Visit Live Site</span></div>
+          </a>
+        </div>
+        <div class="proj-info">
+          <h3>Study <em>Planner</em></h3>
+          <div class="proj-cats"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Live Web App</span></div>
+          <p>A study planner web application built with Python and Flask to organize study schedules and tasks &mdash; live and hosted on PythonAnywhere.</p>
+          <a href="https://Munaam19.pythonanywhere.com" target="_blank" rel="noopener" class="btn btn-gold">Visit Website &#8599;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" data-title="PrimeServe (Restaurant Management)" data-note="This is a desktop app built with Python &amp; Tkinter, so UI screenshots are shown instead of a live link.">
+      <span class="proj-num">02</span>
+      <div class="proj-card-inner">
+        <div class="proj-shot">
+          <img src="images/restaurant.png" alt="PrimeServe main screen">
+          <span data-gallery-src="images/restaurant-1.png"></span>
+          <span data-gallery-src="images/restaurant-2.png"></span>
+          <span data-gallery-src="images/restaurant-3.png"></span>
+          <div class="open-view" data-gallery="0"><span>View UI Screens</span></div>
+        </div>
+        <div class="proj-info">
+          <h3>PrimeServe <em>(Restaurant Management)</em></h3>
+          <div class="proj-cats"><span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">Desktop App</span></div>
+          <p>A complete restaurant management system with a dynamic menu, a functional cart, real-time totals and a printable bill receipt — all wrapped in a clean desktop interface.</p>
+          <button class="btn btn-gold" data-gallery="0">View UI Screens</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" data-title="Invoice System" data-note="Developed during my PHP internship at a software house.">
+      <span class="proj-num">03</span>
+      <div class="proj-card-inner">
+        <div class="proj-shot">
+          <img src="images/invoice-placeholder.svg" alt="Invoice system interface">
+        </div>
+        <div class="proj-info">
+          <h3>Invoice <em>System</em></h3>
+          <div class="proj-cats"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Web App</span></div>
+          <p>Built during my internship at a software house — a web-based invoicing system with customer records, line-item billing and database-driven reports to generate and manage invoices efficiently.</p>
+          <a href="contact.html" class="btn btn-ghost">Ask Me About This</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lb-box">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <h3 class="lb-title" id="lbTitle"></h3>
+    <p class="lb-note" id="lbNote"></p>
+    <div class="lb-stage">
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&lsaquo;</button>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&rsaquo;</button>
+      <img id="lbImg" src="" alt="Project screen">
+    </div>
+    <div class="lb-dots" id="lbDots"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="f-brand">Munaam Farooqui</div>
+    <div class="f-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Munaam Farooqui. Crafted with passion.</p>
+  </div>
+</footer>
+
+<button id="topBtn" aria-label="Back to top">&uarr;</button>
+<script src="js/main.js"></script>
+</body>
+</html>
