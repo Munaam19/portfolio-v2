@@ -122,6 +122,8 @@
   .about-imgs{height:440px; max-width:420px; margin:0 auto;}
 }
 @media (max-width:860px){
+  html.js .reveal, html.js .reveal-left, html.js .reveal-right, html.js .reveal-zoom,
+  html.js .reveal.visible, html.js .reveal-left.visible, html.js .reveal-right.visible, html.js .reveal-zoom.visible{opacity:1 !important; transform:none !important;}
   .nav-links{position:fixed; top:0; right:-320px; width:300px; height:100vh; z-index:950;
     flex-direction:column; gap:4px; padding:100px 30px; background:rgba(11,9,6,.97);
     backdrop-filter:blur(16px); border-left:1px solid var(--line); transition:right .4s cubic-bezier(.2,.7,.2,1);}
