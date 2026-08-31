@@ -48,11 +48,6 @@
   background:linear-gradient(transparent, rgba(0,0,0,.75)); color:var(--gold2); font-size:12px; letter-spacing:2px; text-transform:uppercase;
   opacity:0; transition:.35s;}
 .cert-thumb:hover .cert-view{opacity:1;}
-.cert-link{display:inline-flex; align-items:center; gap:8px; margin-top:12px; padding:8px 16px;
-  background:rgba(212,175,55,.08); border:1px solid var(--line); border-radius:8px;
-  color:var(--gold2); font-size:12px; letter-spacing:1px; text-transform:uppercase; text-decoration:none; transition:.3s;}
-.cert-link:hover{background:rgba(212,175,55,.15); border-color:var(--gold); transform:translateY(-2px);}
-.cert-link svg{width:16px; height:16px; fill:currentColor;}
 
 /* ---------- CONTACT ---------- */
 .btn-wa{background:linear-gradient(120deg,#0e7a41,#25d366 55%,#128c4b); color:#f2fff7; font-weight:600; border:none;
@@ -167,7 +162,6 @@
   .scroll-down{display:none;}
   .cert-grid{grid-template-columns:1fr;}
   .cert-card{padding:24px 20px;}
-  .cert-link{width:100%; justify-content:center;}
   .achv-grid{padding:22px;}
   .achv-grid img{max-width:300px;}
   .f-row{grid-template-columns:1fr; gap:0;}
