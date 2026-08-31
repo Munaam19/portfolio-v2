@@ -25,7 +25,7 @@
 /* ---------- CERTIFICATES ---------- */
 .cert-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
 .cert-card{position:relative; background:linear-gradient(160deg,var(--panel),var(--bg2));
-  border:1px solid var(--line); border-radius:20px; padding:30px 26px; overflow:hidden; transition:.35s;}
+  border:1px solid var(--line); border-radius:20px; padding:30px 26px; transition:.35s;}
 .cert-card:hover{transform:translateY(-6px); border-color:rgba(212,175,55,.5);
   box-shadow:0 22px 50px rgba(0,0,0,.45), 0 0 0 1px rgba(212,175,55,.2);}
 .cert-card .ribbon{position:absolute; top:0; right:0; width:64px; height:64px;
