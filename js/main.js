@@ -3,8 +3,21 @@ document.addEventListener('DOMContentLoaded', function(){
   safe(initLoader); safe(initCursor); safe(initNavbar); safe(initReveal);
   safe(initTypewriter); safe(initCounters); safe(initBars); safe(initTilt);
   safe(initParticles); safe(initLightbox); safe(initForm); safe(initWhatsAppFab); safe(initYear);
+  safe(initCertLinks);
 });
 function safe(fn){ try { fn(); } catch(e){} }
+
+/* ---------- Certificate PDF links ---------- */
+function initCertLinks(){
+  var links = document.querySelectorAll('.cert-thumb, .cert-link');
+  links.forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var url = a.getAttribute('href');
+      if(url) window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  });
+}
 
 /* ---------- Loader ---------- */
 function initLoader(){
